@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $gray;
+    outline: none;
+}
+.container-fluid {
+    overflow-x: hidden;
+}
+.container {
+    padding: 0 15px;
+    overflow-x: hidden;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.link-inherit {
+    color: inherit;
+}
+.link-no-decor {
+    text-decoration: none;
+}
+.link-decor-inverse {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
