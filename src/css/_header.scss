@@ -1,0 +1,121 @@
+.header {
+    $root: &;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 92px;
+    }
+
+    &__logo {
+        max-width: 137px;
+    }
+
+    &__right-s {
+        display: flex;
+        align-items: center;
+    }
+
+    &__help {
+        font-size: 15px;
+    }
+
+    &__label-red {
+        color: $tomato;
+    }
+
+    &__notify {
+        display: flex;
+        margin: 0 26px;
+    }
+
+    &__cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: $lighten-gray;
+        position: relative;
+        cursor: pointer;
+
+        .fa-shopping-cart {
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+    }
+    &__item-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        font-weight: 400;
+        border-radius: 50%;
+        background: $tomato;
+        color: $white;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+
+    &__actions {
+        display: flex;
+        margin: 0 -4px;
+
+        #{$root}{
+            &__btn {
+                width: 72px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                color: $white;
+                font-size: 12px;
+                font-weight: 400;
+                border-radius: 4px;
+                text-decoration: none;
+                margin: 0 4px;
+
+                &--green {
+                    background: $green-apple;
+                }
+                &--red {
+                    background: $tomato;
+                }
+            }
+        }
+    }
+
+    &__navigation {
+        height: 60px;
+        background-color: $dark-gray;
+        width: 100%;
+
+
+        ul {
+            display: flex;
+            justify-content: center;  
+            margin: 23px 0;
+        }
+
+        li {
+            margin-left: 40px;
+            height: 14px;
+
+            &::nth-last-of-type(li) {
+                margin-left: 0;
+            }
+        }
+
+        li a {
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;  
+        }
+
+    }
+
+}
